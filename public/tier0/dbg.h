@@ -1,4 +1,4 @@
-//===== Copyright © 1996-2005, Valve Corporation, All rights reserved. ========//
+//===== Copyright ?1996-2005, Valve Corporation, All rights reserved. ========//
 //
 // Purpose: 
 //
@@ -245,7 +245,7 @@ PLATFORM_INTERFACE void Warning_SpewCallStack( int iMaxCallStackLength, const tc
 
 // This is gone in Source2. Provide helper to roughly mimic Source1 behavior
 void Error( const tchar* pMsg, ... ) FMTFUNCTION( 1, 2 );
-inline void Error( const tchar* pMsg, ... )
+inline void Error( const char* pMsg, ... )
 {
 	static char szBuffer[MAX_LOGGING_MESSAGE_LENGTH];
 	va_list params;
